@@ -1,0 +1,85 @@
+# -------------------------
+# Python cache / temp files
+# -------------------------
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pkl
+*.db
+*.sqlite
+*.log
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Pip build artifacts
+build/
+dist/
+*.egg-info/
+
+# Jupyter notebooks checkpoints
+.ipynb_checkpoints/
+
+# Temporary task working directories
+tasks/*/tmp/
+tasks/*/cache/
+tasks/*/scratch/
+
+# Backup folders
+*-backup/
+*_backup/
+*/backup/
+backup/
+llm-performance-backup*/
+llm-performance-backup/
+
+# -------------------------
+# OS-level and editor-level files
+# -------------------------
+
+# macOS Finder
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# VSCode
+.vscode/
+
+# PyCharm / IntelliJ
+.idea/
+*.iml
+
+# Local environment configuration
+.env
+.env.*
+.secret
+.secrets/
+secrets.json
+
+# -------------------------
+# Node (if you add JS tools later)
+# -------------------------
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# -------------------------
+# Compiled binaries (just in case)
+# -------------------------
+*.exe
+*.dll
+*.so
+*.dylib

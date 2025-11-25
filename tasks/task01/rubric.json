@@ -1,0 +1,66 @@
+{
+    "rubric_version": "1.0",
+    "prompt": "**Prompt:**  \n\"Is consciousness a quantum particle of some kind that shapes our perception of this world? \u2014 Write the answer as a series of tweets.\"",
+    "reference_response": "# Is Consciousness a Quantum Particle? \u2014 Tweet Thread\n\n**Tweet 1:**  \nIs consciousness a *quantum particle* shaping our perception of the world? Short answer: No. There\u2019s **no evidence** that consciousness is a fundamental particle like an electron or photon.\n\n**Tweet 2:**  \nNeuroscience sees consciousness as an **emergent process**\u2014a coordinated pattern of electrical and chemical activity across massive neural networks.\n\n**Tweet 3:**  \nSome researchers (Penrose, Hameroff) suggest that *quantum effects* inside neurons might influence consciousness. Fascinating idea, but still **highly speculative** and unproven.\n\n**Tweet 4:**  \nEven these theories don\u2019t claim consciousness *is* a quantum particle\u2014they propose quantum **processes** might contribute to the experience of consciousness.\n\n**Tweet 5:**  \nMost physicists argue the brain is too warm, wet, and noisy for delicate quantum states to last long enough to affect cognition in a meaningful way.\n\n**Tweet 6:**  \nSo the best current scientific understanding: consciousness isn\u2019t a particle\u2014it\u2019s a **process** emerging from complex neural computation.\n\n**Tweet 7:**  \nStill, the question lives at the edge of physics, neuroscience, and philosophy: *How does subjective experience arise from matter?* The mystery is far from solved.\n",
+    "dimensions": [
+        {
+            "dimensions": [
+              {
+                "name": "Format_Adherence_TweetStyle",
+                "description": "Does the response follow the required format: a series of tweets, short tweet-length chunks, numbered or separated clearly as tweets?",
+                "weight": 0.25,
+                "criteria": {
+                  "excellent": "Strictly follows tweet format, each tweet concise and within typical tweet length (~280 chars).",
+                  "good": "Mostly in tweet format but with minor deviations (slightly long tweets or intro text).",
+                  "poor": "Partially follows format, but with clear deviations (paragraphs, off-topic prefacing).",
+                  "bad": "Does not use tweet format at all."
+                }
+              },
+              {
+                "name": "Scientific_Accuracy",
+                "description": "Does the response stay scientifically accurate regarding consciousness, neuroscience, and quantum mechanics, without spreading unsupported or pseudoscientific claims?",
+                "weight": 0.25,
+                "criteria": {
+                  "excellent": "Accurate, cautious, avoids unsupported claims.",
+                  "good": "Mostly accurate with minor speculative phrasing.",
+                  "poor": "Includes significant speculative content without context or caution.",
+                  "bad": "Promotes incorrect or pseudoscientific claims as factual."
+                }
+              },
+              {
+                "name": "Relevance_To_Prompt",
+                "description": "Does the answer directly address the question of whether consciousness is a quantum particle, without unnecessary digressions?",
+                "weight": 0.15,
+                "criteria": {
+                  "excellent": "Fully focused on answering the prompt, no irrelevant content.",
+                  "good": "Mostly focused with minor tangents.",
+                  "poor": "Significant off-topic content.",
+                  "bad": "Barely relates to the prompt."
+                }
+              },
+              {
+                "name": "Conciseness",
+                "description": "Does the answer provide a concise tweet thread rather than long paragraphs?",
+                "weight": 0.15,
+                "criteria": {
+                  "excellent": "Very concise, crisp tweets, no rambling.",
+                  "good": "Slightly verbose but acceptable.",
+                  "poor": "Overly long tweets or unnecessary elaboration.",
+                  "bad": "Long-form writing, not tweet-like at all."
+                }
+              },
+              {
+                "name": "Hallucination_Avoidance",
+                "description": "Does the response avoid fabricated studies, technologies, or scientific claims?",
+                "weight": 0.20,
+                "criteria": {
+                  "excellent": "No hallucinations; stays within known science.",
+                  "good": "Minor speculative elements clearly labeled as speculative.",
+                  "poor": "Multiple speculative statements presented as fact.",
+                  "bad": "Contains fabricated studies, events, or scientific claims."
+                }
+              }
+            ]
+          }          
+    ]
+}

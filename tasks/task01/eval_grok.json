@@ -1,0 +1,31 @@
+{
+    "rubric_version": "1.0",
+    "scores": {
+        "format_adherence": {
+            "score": 8,
+            "weight": 0.25,
+            "weighted": 2.0
+        },
+        "scientific_accuracy": {
+            "score": 7,
+            "weight": 0.25,
+            "weighted": 1.75
+        },
+        "relevance_to_prompt": {
+            "score": 8,
+            "weight": 0.15,
+            "weighted": 1.2
+        },
+        "conciseness": {
+            "score": 7,
+            "weight": 0.15,
+            "weighted": 1.05
+        },
+        "hallucination_avoidance": {
+            "score": 7,
+            "weight": 0.20,
+            "weighted": 1.4
+        }
+    },
+    "weighted_total": 7.4
+}
