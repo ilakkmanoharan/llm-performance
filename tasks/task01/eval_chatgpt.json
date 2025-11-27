@@ -1,37 +1,32 @@
 {
     "rubric_version": "1.0",
     "scores": {
-      "format_adherence": {
-        "score": 9,
-        "weight": 0.25,
-        "weighted": 2.25,
-        "explanation": "The response follows the required tweet-thread structure very well: each tweet is clearly separated, concise, and formatted in tweet-like chunks. One or two tweets are slightly longer than an ideal tight tweet, but overall adherence is excellent."
-      },
-      "scientific_accuracy": {
-        "score": 9,
-        "weight": 0.25,
-        "weighted": 2.25,
-        "explanation": "The explanation of quantum effects in perception (photons triggering retinal molecules, molecular vibration theories, shot noise, magnetoreception limits) is scientifically accurate. It correctly distinguishes quantum-level sensory events from neural-scale consciousness. No pseudoscience or unsupported claims appear."
-      },
-      "relevance_to_prompt": {
-        "score": 9,
-        "weight": 0.15,
-        "weighted": 1.35,
-        "explanation": "The answer directly addresses both required elements: why quantum mechanics is relevant to perception, and why consciousness need not be a quantum particle. Every tweet stays tightly aligned with the prompt."
-      },
-      "conciseness": {
-        "score": 9,
-        "weight": 0.15,
-        "weighted": 1.35,
-        "explanation": "The response is concise and tweet-like, with no unnecessary elaboration. The tweets convey essential information cleanly. A couple tweets could be even more compressed, preventing a perfect 10."
-      },
-      "hallucination_avoidance": {
-        "score": 10,
-        "weight": 0.20,
-        "weighted": 2.0,
-        "explanation": "All claims are grounded in established science (quantum initiation of vision, noise limits, molecular vibration hypotheses). No fabricated studies, invented experiments, or speculative quantum-mind claims are included. The response stays strictly factual."
-      }
+        "format_adherence": {
+            "score": 9,
+            "weight": 0.25,
+            "weighted": 2.25
+        },
+        "scientific_accuracy": {
+            "score": 9,
+            "weight": 0.25,
+            "weighted": 2.25
+        },
+        "relevance_to_prompt": {
+            "score": 8,
+            "weight": 0.15,
+            "weighted": 1.2
+        },
+        "conciseness": {
+            "score": 9,
+            "weight": 0.15,
+            "weighted": 1.35
+        },
+        "hallucination_avoidance": {
+            "score": 9,
+            "weight": 0.20,
+            "weighted": 1.8
+        }
     },
-    "weighted_total": 9.15
-  }
-  
+    "weighted_total": 8.85
+}
+
