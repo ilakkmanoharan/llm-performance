@@ -1,0 +1,67 @@
+{
+    "rubric_version": "1.0",
+    "prompt": "**Prompt:**  \n\"Why quantum mechanics could be relevant to perception without requiring consciousness to be a literal particle. Write the answer as a series of concise tweets.\"  \n:contentReference[oaicite:0]{index=0}",
+    "reference_response": ":contentReference[oaicite:1]{index=1}",
+    "dimensions": [
+      {
+        "dimensions": [
+          {
+            "name": "Format_Adherence_TweetStyle",
+            "description": "Does the response follow the required format: a series of concise tweets, separated clearly as tweet-length chunks?",
+            "weight": 0.25,
+            "criteria": {
+              "excellent": "Uses clear tweet-by-tweet formatting, concise, well-separated, and within typical tweet length limits.",
+              "good": "Mostly tweet-formatted with minor deviations (slightly long tweets or missing numbering).",
+              "poor": "Partially tweet-like but includes paragraph-style sections or inconsistent formatting.",
+              "bad": "Does not use tweet format at all."
+            }
+          },
+          {
+            "name": "Scientific_Accuracy",
+            "description": "Does the response describe quantum mechanics, sensory biology, and perception accurately without implying unsupported consciousness-as-quantum claims?",
+            "weight": 0.25,
+            "criteria": {
+              "excellent": "Scientifically accurate, avoids pseudoscience, clearly distinguishes quantum sensory effects from consciousness itself.",
+              "good": "Generally accurate with minor oversimplifications.",
+              "poor": "Includes speculative claims without clarification or mixes sensory quantum effects with unsupported consciousness theories.",
+              "bad": "Contains pseudoscientific or false claims presented as fact."
+            }
+          },
+          {
+            "name": "Relevance_To_Prompt",
+            "description": "Does the response directly address why quantum mechanics matters for perception and clarify that consciousness is not a particle?",
+            "weight": 0.15,
+            "criteria": {
+              "excellent": "Fully addresses both aspects: relevance of quantum mechanics to perception and rejecting consciousness-as-particle.",
+              "good": "Addresses the prompt mostly but may emphasize one side more.",
+              "poor": "Partially addresses the topic with missing or weak linkage to the prompt.",
+              "bad": "Barely relates to the prompt."
+            }
+          },
+          {
+            "name": "Conciseness",
+            "description": "Does the answer remain concise and tweet-like rather than lengthy or verbose?",
+            "weight": 0.15,
+            "criteria": {
+              "excellent": "Very concise, crisp tweets with no unnecessary elaboration.",
+              "good": "Mostly concise with minor verbosity.",
+              "poor": "Several tweets feel long or wordy.",
+              "bad": "Not concise at all; resembles long paragraphs."
+            }
+          },
+          {
+            "name": "Hallucination_Avoidance",
+            "description": "Does the response avoid fabricated scientific claims, fictional experiments, or invented quantum theories?",
+            "weight": 0.20,
+            "criteria": {
+              "excellent": "No hallucinations; all claims grounded in known science.",
+              "good": "Minor speculative content but correctly framed as speculative.",
+              "poor": "Speculative claims presented ambiguously or without caution.",
+              "bad": "Includes fabricated scientific results or unsupported statements."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  

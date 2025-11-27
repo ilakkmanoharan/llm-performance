@@ -1,0 +1,38 @@
+{
+  "rubric_version": "1.0",
+  "scores": {
+    "format_adherence": {
+      "score": 10,
+      "weight": 0.25,
+      "weighted": 2.5,
+      "explanation": "The response is perfectly formatted as a tweet thread: numbered tweets, concise segmentation, and consistent tweet-like structure. No deviations or overly long tweet blocks."
+    },
+    "scientific_accuracy": {
+      "score": 9,
+      "weight": 0.25,
+      "weighted": 2.25,
+      "explanation": "The explanation of quantum effects in perception—single-photon detection, rhodopsin activation, quantum tunneling in olfaction, decoherence, etc.—is accurate and consistent with current scientific understanding. The mention of quantum roles in touch/hearing is cautious but slightly speculative, preventing a perfect score."
+    },
+    "relevance_to_prompt": {
+      "score": 10,
+      "weight": 0.15,
+      "weighted": 1.5,
+      "explanation": "The response directly addresses both core prompt elements: (1) why quantum mechanics is relevant to perception, and (2) why consciousness does NOT need to be a particle. Every tweet is on topic with no drift."
+    },
+    "conciseness": {
+      "score": 9,
+      "weight": 0.15,
+      "weighted": 1.35,
+      "explanation": "The tweets are concise, readable, and efficient. A couple of tweets pack multiple ideas (e.g., tweet 6 about emerging evidence), which could be slightly tighter. Otherwise highly concise."
+    },
+    "hallucination_avoidance": {
+      "score": 9,
+      "weight": 0.20,
+      "weighted": 1.8,
+      "explanation": "The response stays grounded in known science and avoids fabrications. All quantum biology references are widely discussed in research. The only slight deduction is for mentioning possible quantum roles in mechanoreceptors, which is speculative but still framed cautiously."
+    }
+  },
+  "weighted_total": 9.40
+}
+
+  
