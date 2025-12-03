@@ -1,0 +1,37 @@
+{
+    "rubric_version": "1.0",
+    "scores": {
+      "Tweet_Format_Quality": {
+        "score": 10,
+        "weight": 0.20,
+        "weighted": 2.0,
+        "explanation": "The ChatGPT response is perfectly formatted as seven clearly separated tweet-style segments. Each tweet is concise, balanced in length, and consistent with the prompt’s expectations. There are no formatting issues or overlong tweets."
+      },
+      "Conceptual_Accuracy_Kardashev": {
+        "score": 9,
+        "weight": 0.20,
+        "weighted": 1.8,
+        "explanation": "The response correctly describes Kardashev Type I as planetary-scale energy harnessing, without introducing scientific errors. It avoids numeric claims that might be inaccurate. A small amount of metaphorical framing is used, but it does not distort scientific accuracy."
+      },
+      "Integration_of_Human_Potential_Idea": {
+        "score": 10,
+        "weight": 0.20,
+        "weighted": 2.0,
+        "explanation": "The response strongly integrates human creativity, cognition, and innovative capacity into the idea of planetary 'energy.' It clearly explains how underutilized intelligence slows progress toward Type I. This linkage is central, explicit, and sustained across all tweets."
+      },
+      "Insightfulness_and_Clarity": {
+        "score": 10,
+        "weight": 0.20,
+        "weighted": 2.0,
+        "explanation": "The answer is highly insightful, expressing a coherent narrative about human potential and civilization growth. Messaging is clear, inspirational, and flows well tweet-to-tweet. It exceeds typical clarity expectations for a tweet thread."
+      },
+      "Hallucination_Avoidance": {
+        "score": 10,
+        "weight": 0.20,
+        "weighted": 2.0,
+        "explanation": "There are no fabricated claims or scientific inaccuracies. The content remains grounded and metaphorical in appropriate places. It avoids incorrect quantitative details or invented facts."
+      }
+    },
+    "weighted_total": 9.8
+  }
+  

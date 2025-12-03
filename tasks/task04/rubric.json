@@ -1,0 +1,78 @@
+{
+    "rubric_version": "1.0",
+    "prompt": "**Prompt:**\n\"Write a balanced, deeply informed, multi-angle analysis on the topic: Does GitHub count daily commits made inside a Pull Request toward the contribution graph? And if not, is this behavior intentional or a limitation? Follow all structural, stylistic, and analytical requirements listed in sections A–F of the prompt.\"\n",
+    "reference_response": "",
+    "dimensions": [
+      {
+        "dimensions": [
+          {
+            "name": "Factual_Accuracy_GitHub_Behavior",
+            "description": "Does the response correctly explain how GitHub's contribution graph works, including what counts and what does not?",
+            "weight": 0.20,
+            "criteria": {
+              "excellent": "Accurately describes how contributions are counted, clarifies PR-branch behavior, and identifies immediate contribution events correctly.",
+              "good": "Mostly accurate with small omissions or minor misunderstandings.",
+              "poor": "Contains noticeable inaccuracies or incomplete explanations.",
+              "bad": "Fundamentally incorrect explanation of GitHub's contribution-counting behavior."
+            }
+          },
+          {
+            "name": "Design_Rationale_Analysis",
+            "description": "Does the response explain high-level reasons why GitHub may have chosen this design without relying on concrete examples?",
+            "weight": 0.20,
+            "criteria": {
+              "excellent": "Provides clear, abstract, conceptual reasoning that aligns with version-control philosophy, metric integrity, and simplicity requirements.",
+              "good": "Reasoning is present but not very deep or slightly concrete.",
+              "poor": "Reasoning is shallow, unclear, or overly specific.",
+              "bad": "Does not analyze the rationale or misinterprets it entirely."
+            }
+          },
+          {
+            "name": "Modern_Concerns_Analysis",
+            "description": "Does the response articulate abstract, point-wise concerns about why the behavior may feel outdated today?",
+            "weight": 0.20,
+            "criteria": {
+              "excellent": "Clearly states conceptual issues related to modern workflows, visibility, perception, and collaboration patterns in an abstract manner.",
+              "good": "Addresses most concerns but may include minor concreteness or lack depth.",
+              "poor": "Weak, overly generic, or includes concrete examples against prompt instructions.",
+              "bad": "Fails to discuss modern concerns or violates the abstraction requirement."
+            }
+          },
+          {
+            "name": "Improvement_Options_Quality",
+            "description": "Does the response propose at least four abstract redesign approaches with advantages and drawbacks?",
+            "weight": 0.20,
+            "criteria": {
+              "excellent": "Provides four or more abstract improvement strategies, each with balanced advantages and drawbacks, staying framework-level.",
+              "good": "Proposes valid options but with missing or weak pros/cons.",
+              "poor": "Fewer than four options or overly specific/implementation-bound descriptions.",
+              "bad": "No meaningful improvement suggestions."
+            }
+          },
+          {
+            "name": "Conclusion_Clarity_and_Balance",
+            "description": "Does the response identify a well-reasoned, neutral recommendation that considers both legacy constraints and modern workflows?",
+            "weight": 0.10,
+            "criteria": {
+              "excellent": "Provides a balanced, neutral recommendation that logically follows from the earlier analysis.",
+              "good": "Recommendation is reasonable but may lack nuance.",
+              "poor": "Conclusion is unclear, biased, or weakly connected to the analysis.",
+              "bad": "Fails to provide a conclusion or gives an unsupported one."
+            }
+          },
+          {
+            "name": "Structure_And_Style_Compliance",
+            "description": "Does the response follow all structural and stylistic requirements (sections A–F, headers, bullet points, concision, professional tone)?",
+            "weight": 0.10,
+            "criteria": {
+              "excellent": "Strictly adheres to the required structure, headers, bulleting, concision, and neutral tone.",
+              "good": "Mostly adheres with minor deviations or slight verbosity.",
+              "poor": "Multiple structural deviations, unclear formatting, or inconsistent tone.",
+              "bad": "Does not follow the structure or style requirements at all."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  

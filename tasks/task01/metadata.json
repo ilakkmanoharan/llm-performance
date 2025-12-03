@@ -1,1 +1,17 @@
-{ "category": "", "difficulty": "", "notes": "" }
+{
+    "task_id": "task01",
+    "topic": "Quantum Consciousness — Tweet Thread",
+    "description": "Evaluate LLM responses to a scientific question about whether consciousness is a quantum particle, with the constraint that the answer must be written as a series of tweets.",
+    "difficulty": "medium",
+    "tags": [
+      "science",
+      "quantum",
+      "neuroscience",
+      "formatting",
+      "reasoning"
+    ],
+    "prompt_file": "prompt.md",
+    "rubric_file": "rubric.json",
+    "created": "2025-11-26"
+  }
+  

@@ -1,0 +1,67 @@
+{
+    "rubric_version": "1.0",
+    "prompt": "**Prompt:**\n\"Kardashev Type I measures a civilization’s ability to harness all the energy available on its home planet. But 'planet’s energy' also includes human cognitive potential, creativity, science, innovation, and meaningful work. And does wasting human intelligence slow our progress toward becoming a Type I civilization? — Answer in a series of tweets.\"\n:contentReference[oaicite:0]{index=1}",
+    "reference_response": ":contentReference[oaicite:1]{index=0}",
+    "dimensions": [
+      {
+        "dimensions": [
+          {
+            "name": "Tweet_Format_Quality",
+            "description": "Does the answer clearly deliver the content as distinct, tweet-sized messages?",
+            "weight": 0.20,
+            "criteria": {
+              "excellent": "Clearly separated tweets, each concise and well-structured, consistent with Twitter conventions.",
+              "good": "Mostly tweet-like with minor length or formatting inconsistencies.",
+              "poor": "Tweets are unclear, overly long, or inconsistently separated.",
+              "bad": "Not in tweet format at all."
+            }
+          },
+          {
+            "name": "Conceptual_Accuracy_Kardashev",
+            "description": "Does the response correctly describe the Kardashev scale and Type I energy usage?",
+            "weight": 0.20,
+            "criteria": {
+              "excellent": "Accurate explanation of Type I energy and the scale’s meaning.",
+              "good": "Mostly accurate with minor simplifications.",
+              "poor": "Noticeable inaccuracies or missing key concepts.",
+              "bad": "Incorrect explanation of the Kardashev scale."
+            }
+          },
+          {
+            "name": "Integration_of_Human_Potential_Idea",
+            "description": "How well does the response connect human creativity, cognition, and underutilized intelligence to planetary 'energy' and progress?",
+            "weight": 0.20,
+            "criteria": {
+              "excellent": "Strong, clear linkage between human potential and civilization advancement.",
+              "good": "Linkage is present but not deeply developed.",
+              "poor": "Weak or unclear connection between human potential and the Kardashev context.",
+              "bad": "Does not address human cognitive potential at all."
+            }
+          },
+          {
+            "name": "Insightfulness_and_Clarity",
+            "description": "Does the response offer meaningful insight and communicate ideas clearly?",
+            "weight": 0.20,
+            "criteria": {
+              "excellent": "Clear, engaging, insightful tweets with strong narrative flow.",
+              "good": "Generally clear with some insight.",
+              "poor": "Ideas are muddled or shallow.",
+              "bad": "Hard to understand or lacks meaningful content."
+            }
+          },
+          {
+            "name": "Hallucination_Avoidance",
+            "description": "Does the answer avoid fabricated scientific claims or exaggerated interpretations?",
+            "weight": 0.20,
+            "criteria": {
+              "excellent": "No hallucinations; metaphors are clearly metaphors, science is accurate.",
+              "good": "Minor speculative elements but framed appropriately.",
+              "poor": "Speculation is ambiguous or not clearly identified.",
+              "bad": "Contains fabricated or false scientific claims."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  

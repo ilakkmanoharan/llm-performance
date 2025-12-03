@@ -1,0 +1,1 @@
+Kardashev Type I measures a civilization’s ability to harness all the energy available on its home planet. But “planet’s energy” also includes human cognitive potential, creativity, science, innovation, and meaningful work. And does wasting human intelligence slow our progress toward becoming a Type I civilization? - Answer in a series of tweets

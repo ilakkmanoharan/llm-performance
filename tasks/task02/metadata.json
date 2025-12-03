@@ -1,1 +1,17 @@
-{ "category": "", "difficulty": "", "notes": "" }
+{
+    "task_id": "task02",
+    "topic": "Quantum Mechanics & Perception — Tweet Thread",
+    "description": "Evaluate LLM responses to a scientific prompt asking why quantum mechanics could influence perception without requiring consciousness to be a literal particle. The answer must be written as a series of concise tweets.",
+    "difficulty": "medium",
+    "tags": [
+      "science",
+      "quantum",
+      "neuroscience",
+      "reasoning",
+      "formatting"
+    ],
+    "prompt_file": "prompt.md",
+    "rubric_file": "rubric.json",
+    "created": "2025-11-26"
+  }
+  
