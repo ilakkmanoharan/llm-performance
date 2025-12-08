@@ -1,24 +1,25 @@
 ✅ LEVEL 5 — Expert Difficulty (Deep Cross-Section + Changed Code)
 Question (Level 5)
 
-Strategy 1 defines ranges from random tokens:
+Question: 
+The initial partitioning strategy uses random tokens:
 Tokens(nodeA) = {A1, A2}
 Tokens(nodeB) = {B1, B2}
-Ranges include:
+Resulting ranges:
 (A1, B1], (B1, A2], (A2, B2], (B2, A1]
-Replica synchronization stores a Merkle tree per range:
+Replica synchronization builds a Merkle tree per range:
 Tree(A1,B1).root = H( left || right )
-When a node joins with token X, (A1,B1] is split:
+When a new node joins with token X, the range (A1, B1] is split:
 Old:
 (A1, B1]
 Tree(A1,B1)
 New:
 (A1, X]
 (X, B1]
-Assume buggy logic incorrectly reuses the old root:
+Assume the old code incorrectly attempts to “reuse” the old Merkle tree root:
 // buggy pseudo-logic
 Tree(A1,X).root = Tree(A1,B1).root
-Explain—using only these Dynamo components—why this reuse is invalid and what breaks.
+Explain why this reuse is invalid and what breaks as a result.
 
 ⭐ Golden Response (Level 5)
 
