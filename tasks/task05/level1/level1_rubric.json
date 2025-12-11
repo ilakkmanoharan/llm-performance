@@ -1,0 +1,51 @@
+{
+    "rubric_version": "1.0",
+    "level": "LEVEL 1 — Basic Difficulty",
+    "dimensions": [
+      {
+        "name": "Line1_RangeSplit_and_KeyRangeImpact",
+        "source_line": "Adding token X forces the system to split the original range and rebuild the Merkle trees for the new ranges, while also locating the keys that belong to each sub-range.",
+        "weight": 0.25,
+        "criteria": {
+          "excellent": "Correctly explains all three elements: (1) token insertion splits the original range, (2) Merkle trees must be rebuilt, and (3) keys must be reassigned into new sub-ranges.",
+          "good": "Captures most elements but omits one (e.g., mentions range split but not Merkle-tree rebuild).",
+          "poor": "Describes only one element or shows partial misunderstanding of why these consequences follow.",
+          "bad": "Misses or misstates the mechanism entirely."
+        }
+      },
+      {
+        "name": "Line2_Rescan_Requirement_and_RandomTokenEffect",
+        "source_line": "Because the new ranges didn’t previously exist, the node that owned (A,B] must rescan its storage to determine which keys belong to (A,X] and which belong to (X,B]. This happens because random token placement reshapes range boundaries whenever a new node joins.",
+        "weight": 0.25,
+        "criteria": {
+          "excellent": "Shows that new sub-ranges have no preexisting index, forcing a full rescan, and correctly attributes this to random token placement reshaping boundaries.",
+          "good": "Acknowledges rescanning or range-boundary changes but does not fully connect the reasoning.",
+          "poor": "Mentions rescanning without linking it to non-existent ranges or token randomness.",
+          "bad": "Fails to recognize why rescanning is needed or misattributes the cause."
+        }
+      },
+      {
+        "name": "Line3_MerkleTree_Invalidation_and_NoReuse",
+        "source_line": "The Merkle tree associated with (A,B] no longer matches either of the new ranges, so neither subtree of the original hash structure can be reused. A fresh Merkle tree must be built for each new interval.",
+        "weight": 0.25,
+        "criteria": {
+          "excellent": "Accurately explains why the original Merkle tree becomes invalid, why subtree reuse is impossible, and that full reconstruction is required.",
+          "good": "Correctly states that the Merkle tree must be rebuilt but gives incomplete justification.",
+          "poor": "Shows confusion about Merkle-tree structure or claims partial reuse is possible without justification.",
+          "bad": "Fails to understand why the old Merkle tree cannot apply or denies the need for rebuilding."
+        }
+      },
+      {
+        "name": "Line4_BootstrapPerformanceImpact",
+        "source_line": "This slows bootstrapping significantly because the system cannot hand off accurate replicas until both the range scans and the Merkle-tree rebuilds complete.",
+        "weight": 0.25,
+        "criteria": {
+          "excellent": "Clearly connects rescanning + Merkle rebuild costs to slower bootstrapping and the inability to hand off correct replicas.",
+          "good": "Identifies that performance is slowed but only loosely links it to the required operations.",
+          "poor": "Mentions slowdown without tying it to accuracy requirements or the dependency on completed rebuilds.",
+          "bad": "Does not recognize any performance impact or incorrectly attributes it."
+        }
+      }
+    ]
+  }
+  

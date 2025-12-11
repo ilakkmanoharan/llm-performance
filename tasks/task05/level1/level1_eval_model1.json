@@ -1,0 +1,30 @@
+{
+  "rubric_version": "1.0",
+  "scores": {
+    "Line1_RangeSplit_and_KeyRangeImpact": {
+      "score": 10,
+      "weight": 0.25,
+      "weighted": 2.5,
+      "explanation": "Model1 correctly explains that inserting a token splits an existing key-range, invalidates the original Merkle tree, and requires new Merkle trees for each resulting sub-range. Model1 also states later in his own response that keys must be repartitioned and rehashed, which shows awareness that key redistribution occurs when the range is split."
+      },
+    "Line2_Rescan_Requirement_and_RandomTokenEffect": {
+      "score": 8,
+      "weight": 0.25,
+      "weighted": 2.0,
+      "explanation": "Model1 states that splitting requires reprocessing all keys in the affected range and that keys must be repartitioned for the new sub-ranges, which captures the essential idea of rescanning. However, the response does not explicitly frame this as 'the new ranges didn’t previously exist so the node must rescan storage' and does not mention the role of random token placement in reshaping boundaries, so it falls slightly short of the rubric’s 'excellent' description."
+    },
+    "Line3_MerkleTree_Invalidation_and_NoReuse": {
+      "score": 10,
+      "weight": 0.25,
+      "weighted": 2.5,
+      "explanation": "Model1 gives a complete and accurate explanation of Merkle-tree invalidation: the original tree spans keys now split across two ranges, parent hashes depend on the full range of children, and this forces a full rebuild rather than subtree reuse. This fully matches the intended reasoning and satisfies the 'excellent' criteria."
+    },
+    "Line4_BootstrapPerformanceImpact": {
+      "score": 9,
+      "weight": 0.25,
+      "weighted": 2.25,
+      "explanation": "Model1 clearly ties the intensive recalculation work to prolonged bootstrapping time, noting that it consumes significant resources and slows the system’s ability to scale. This captures the core causal link the rubric expects. The answer goes beyond the prompt by adding production anecdotes (CPU load, peak seasons, nearly a day), which are not necessary for a Level 1 explanation, so it is rated just below perfect."
+    }
+  },
+  "weighted_total": 9.25
+}
